@@ -1,0 +1,288 @@
+/* ============================================
+   LOAM ROASTRY — ABOUT PAGE
+   ============================================ */
+
+/* ---- PAGE HERO ---- */
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 88vh;
+  padding-top: 72px;
+  overflow: hidden;
+}
+
+.about-hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 5% 5rem 7%;
+  background: var(--cream);
+}
+
+.about-hero__headline {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.about-hero__headline em {
+  font-style: italic;
+  color: var(--rust);
+}
+
+.about-hero__sub {
+  font-size: 1.05rem;
+  color: var(--taupe);
+  line-height: 1.8;
+}
+
+.about-hero__img {
+  background:
+    linear-gradient(180deg, rgba(23,18,16,0.15) 0%, transparent 40%),
+    linear-gradient(135deg, #1e0e06 0%, #5a3018 25%, #8a5828 50%, #c49060 70%, #6b3c18 90%, #2a1208 100%);
+}
+
+/* ---- INTRO ---- */
+.about-intro {
+  background: var(--black);
+  padding: 7rem 5%;
+}
+
+.about-intro__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-intro__inner p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 300;
+  color: var(--tan);
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.about-intro__big {
+  font-family: var(--font-serif) !important;
+  font-size: clamp(2.5rem, 5vw, 4rem) !important;
+  font-style: italic;
+  color: var(--rust) !important;
+  line-height: 1.1 !important;
+  margin-bottom: 0 !important;
+}
+
+/* ---- OUR STORY ---- */
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 640px;
+}
+
+.about-story__img {
+  background:
+    linear-gradient(160deg, rgba(23,18,16,0.2) 0%, transparent 50%),
+    linear-gradient(135deg, #3d2010 0%, #7a4020 30%, #b87840 55%, #8a5028 80%, #2a1208 100%);
+}
+
+.about-story__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem 7% 5rem 5%;
+  background: var(--cream-dk);
+}
+
+.about-story__text h2 {
+  margin-bottom: 1.5rem;
+}
+
+.about-story__text p {
+  font-size: 0.95rem;
+  color: var(--taupe);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+  max-width: 460px;
+}
+
+.about-story__quote {
+  margin-top: 1.75rem;
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--rust);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--brown);
+  line-height: 1.75;
+  max-width: 440px;
+}
+
+/* ---- APPROACH ---- */
+.about-approach {
+  padding: 7rem 5%;
+  background: var(--cream);
+}
+
+.about-approach__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-approach__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.approach-card {
+  background: var(--cream-dk);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  border: 1px solid rgba(196,170,146,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.approach-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(23,18,16,0.08);
+}
+
+.approach-card--mid {
+  background: var(--rust);
+  border-color: transparent;
+}
+
+.approach-card--mid .approach-card__num,
+.approach-card--mid h3,
+.approach-card--mid p {
+  color: var(--cream);
+}
+
+.approach-card--mid .approach-card__num {
+  color: rgba(248,240,227,0.5);
+}
+
+.approach-card__num {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--cream-dkr);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.approach-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--black);
+  margin-bottom: 0.75rem;
+}
+
+.approach-card p {
+  font-size: 0.9rem;
+  color: var(--taupe);
+  line-height: 1.75;
+}
+
+/* ---- THE SPACE ---- */
+.about-space {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.about-space__img {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, #1e0c04 0%, #4a2810 25%, #8a5030 50%, #c47840 65%, #6a3818 85%, #1a0c04 100%);
+}
+
+.about-space__overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 560px;
+  padding: 5rem 7%;
+  background: linear-gradient(90deg, rgba(23,18,16,0.82) 0%, rgba(23,18,16,0.6) 50%, rgba(23,18,16,0.1) 100%);
+  max-width: 620px;
+}
+
+.about-space__overlay .section-label { color: var(--taupe); }
+
+.about-space__overlay h2 {
+  color: var(--cream);
+  margin-bottom: 1.25rem;
+}
+
+.about-space__overlay h2 em {
+  color: var(--salmon);
+}
+
+.about-space__overlay p {
+  font-size: 0.95rem;
+  color: var(--tan);
+  line-height: 1.9;
+  max-width: 440px;
+}
+
+/* ---- WHY WE DO IT ---- */
+.about-why {
+  background: var(--cream-dk);
+  padding: 9rem 5%;
+  text-align: center;
+}
+
+.about-why__inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.about-why__headline {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1.5rem;
+}
+
+.about-why__body {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--taupe);
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+/* ---- NAV ACTIVE ---- */
+.nav__active {
+  color: var(--rust) !important;
+}
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 960px) {
+  .about-hero,
+  .about-story { grid-template-columns: 1fr; }
+
+  .about-hero__img { min-height: 340px; order: -1; }
+  .about-hero__text { padding: 4rem 5%; }
+
+  .about-story__img { min-height: 300px; }
+  .about-story__text { padding: 4rem 5%; }
+
+  .about-approach__grid { grid-template-columns: 1fr 1fr; }
+
+  .about-space__overlay { max-width: 100%; padding: 4rem 5%; }
+}
+
+@media (max-width: 600px) {
+  .about-approach__grid { grid-template-columns: 1fr; }
+}
