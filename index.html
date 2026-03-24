@@ -6,7 +6,7 @@
   <title>Loam Roastry</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,12 +25,13 @@
         <path d="M40 54 C27 47 16 54 14 64 C25 57 34 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
         <path d="M40 54 C53 47 64 54 66 64 C55 57 46 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
       </svg>
-      <span class="nav__wordmark">LOAM <span>ROASTRY</span></span>
+      <span class="nav__wordmark">Loam <em>Roastry</em></span>
     </a>
     <ul class="nav__links">
-      <li><a href="#story">Story</a></li>
+      <li><a href="#story">About</a></li>
       <li><a href="#menu">Menu</a></li>
-      <li><a href="#beans">Beans</a></li>
+      <li><a href="#beans">Shop</a></li>
+      <li><a href="#wholesale">Wholesale</a></li>
       <li><a href="#visit">Visit</a></li>
     </ul>
     <a href="#visit" class="btn btn--outline">Find Us</a>
@@ -38,57 +39,41 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero__content">
-      <div class="hero__logo-lockup">
-        <svg class="hero__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 88" fill="none">
-          <path d="M40 4C42.2 4 44.2 5.1 45.3 7L76 68C77.1 70 77.1 72.4 76 74.4C74.9 76.4 72.8 77.6 70.7 77.6H9.3C7.2 77.6 5.1 76.4 4 74.4C2.9 72.4 2.9 70 4 68L34.7 7C35.8 5.1 37.8 4 40 4Z" stroke="currentColor" stroke-width="1.6"/>
-          <circle cx="40" cy="22" r="2.8" fill="currentColor"/>
-          <circle cx="33.5" cy="27.5" r="2.2" fill="currentColor"/>
-          <circle cx="46.5" cy="27.5" r="2.2" fill="currentColor"/>
-          <line x1="40" y1="31" x2="40" y2="68" stroke="currentColor" stroke-width="1.2"/>
-          <path d="M40 40 C31 35 22 40 19 48 C28 42 35 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-          <path d="M40 40 C49 35 58 40 61 48 C52 42 45 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-          <path d="M40 54 C27 47 16 54 14 64 C25 57 34 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-          <path d="M40 54 C53 47 64 54 66 64 C55 57 46 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-        </svg>
-        <div class="hero__brand">
-          <h1 class="hero__name">LOAM</h1>
-          <p class="hero__sub-name">ROASTRY</p>
-        </div>
-      </div>
-      <p class="hero__tagline">Grown from the ground up.<br>Roasted with intention.</p>
+    <div class="hero__inner">
+      <p class="hero__eyebrow">North Shore, Oahu — Est. 2014</p>
+      <h1 class="hero__headline">
+        Coffee grown<br>
+        from <em>good soil.</em>
+      </h1>
+      <p class="hero__sub">Single-origin. Slow-roasted. Shipped within 24 hours.</p>
       <div class="hero__cta">
-        <a href="#menu" class="btn btn--primary">Explore the Menu</a>
-        <a href="#beans" class="btn btn--ghost">Shop Our Beans</a>
+        <a href="#menu" class="btn btn--primary">See the Menu</a>
+        <a href="#beans" class="btn btn--ghost">Shop Beans</a>
       </div>
     </div>
-    <div class="hero__est">Est. 2014</div>
+    <div class="hero__img"></div>
   </section>
 
   <!-- STRIP -->
   <div class="strip">
     <span>Single Origin</span>
-    <span class="divider">·</span>
+    <span class="dot">·</span>
     <span>Direct Trade</span>
-    <span class="divider">·</span>
+    <span class="dot">·</span>
     <span>Roasted Daily</span>
-    <span class="divider">·</span>
+    <span class="dot">·</span>
     <span>North Shore, Oahu</span>
   </div>
 
   <!-- STORY -->
   <section class="story" id="story">
+    <div class="story__img"></div>
     <div class="story__text">
       <p class="section-label">Our Story</p>
-      <h2>Rooted in the Earth,<br>Raised on Good Coffee</h2>
-      <p>Loam is the rich, living soil that gives life to what grows. It's what grounds us. We partner directly with farms across Hawaii, Ethiopia, and Colombia — paying farmers fairly and sourcing coffee that carries the character of the land it came from.</p>
+      <h2>Rooted in the earth,<br>raised on <em>good coffee.</em></h2>
+      <p>Loam is the rich, living soil that gives life to what grows — it's what grounds us. We partner directly with farms in Hawaii, Ethiopia, and Colombia, paying farmers fairly and sourcing beans that carry the character of the land they came from.</p>
       <p>Every batch is small. Every roast is deliberate. No shortcuts, no noise.</p>
-    </div>
-    <div class="story__visual">
-      <div class="story__img-block">
-        <div class="story__img story__img--1"></div>
-        <div class="story__img story__img--2"></div>
-      </div>
+      <a href="#beans" class="btn btn--primary">Explore Our Beans</a>
     </div>
   </section>
 
@@ -100,42 +85,65 @@
     </div>
     <div class="menu__grid">
       <div class="menu-card">
-        <div class="menu-card__icon">☕</div>
-        <h3>Pour Over</h3>
-        <p>Hand-poured, single cup. Our Ethiopian Yirgacheffe — bright, floral, and clear as morning.</p>
-        <span class="menu-card__price">$6</span>
+        <div class="menu-card__top menu-card__top--1"></div>
+        <div class="menu-card__body">
+          <h3>Pour Over</h3>
+          <p>Hand-poured, single cup. Ethiopian Yirgacheffe — bright, floral, and clear as morning.</p>
+          <span class="menu-card__price">$6</span>
+        </div>
       </div>
       <div class="menu-card menu-card--featured">
         <div class="menu-card__badge">House Favorite</div>
-        <div class="menu-card__icon">🌿</div>
-        <h3>Loam Cold Brew</h3>
-        <p>18-hour steep with our dark roast blend. Earthy, smooth, no bitterness — served over island ice.</p>
-        <span class="menu-card__price">$7</span>
+        <div class="menu-card__top menu-card__top--2"></div>
+        <div class="menu-card__body">
+          <h3>Loam Cold Brew</h3>
+          <p>18-hour steep. Earthy, smooth, no bitterness — served over island ice.</p>
+          <span class="menu-card__price">$7</span>
+        </div>
       </div>
       <div class="menu-card">
-        <div class="menu-card__icon">☁️</div>
-        <h3>Cortado</h3>
-        <p>Equal parts espresso and steamed milk. Direct, no-nonsense, and perfectly balanced.</p>
-        <span class="menu-card__price">$5</span>
+        <div class="menu-card__top menu-card__top--3"></div>
+        <div class="menu-card__body">
+          <h3>Cortado</h3>
+          <p>Equal parts espresso and steamed milk. Direct, no-nonsense, perfectly balanced.</p>
+          <span class="menu-card__price">$5</span>
+        </div>
       </div>
       <div class="menu-card">
-        <div class="menu-card__icon">🥥</div>
-        <h3>Coconut Latte</h3>
-        <p>Local coconut milk, two shots of our Colombia Huila, a touch of raw cane sugar.</p>
-        <span class="menu-card__price">$7</span>
+        <div class="menu-card__top menu-card__top--4"></div>
+        <div class="menu-card__body">
+          <h3>Coconut Latte</h3>
+          <p>Local coconut milk, two shots of Colombia Huila, a touch of raw cane sugar.</p>
+          <span class="menu-card__price">$7</span>
+        </div>
       </div>
       <div class="menu-card">
-        <div class="menu-card__icon">⚡</div>
-        <h3>Espresso</h3>
-        <p>Double shot, pulled tight. Colombia Huila single origin. Dark chocolate, clean finish.</p>
-        <span class="menu-card__price">$4</span>
+        <div class="menu-card__top menu-card__top--5"></div>
+        <div class="menu-card__body">
+          <h3>Espresso</h3>
+          <p>Double shot, pulled tight. Colombia Huila single origin. Dark chocolate, clean finish.</p>
+          <span class="menu-card__price">$4</span>
+        </div>
       </div>
       <div class="menu-card">
-        <div class="menu-card__icon">🍵</div>
-        <h3>Matcha Latte</h3>
-        <p>Ceremonial grade matcha, steamed oat milk, pinch of sea salt. For the non-coffee crowd.</p>
-        <span class="menu-card__price">$6</span>
+        <div class="menu-card__top menu-card__top--6"></div>
+        <div class="menu-card__body">
+          <h3>Matcha Latte</h3>
+          <p>Ceremonial grade matcha, steamed oat milk, pinch of sea salt.</p>
+          <span class="menu-card__price">$6</span>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- WHOLESALE -->
+  <section class="wholesale" id="wholesale">
+    <div class="wholesale__img"></div>
+    <div class="wholesale__text">
+      <p class="section-label">Wholesale</p>
+      <h2>Got a Coffee Shop?<br><em>Need Coffee in Bulk?</em></h2>
+      <p>We'd love to serve your place. With over 10 years of sourcing, roasting, and serving experience, partnering with Loam gets you access to direct-trade beans, equipment support, and barista training you can count on.</p>
+      <a href="#visit" class="btn btn--outline">Get in Touch</a>
     </div>
   </section>
 
@@ -148,25 +156,40 @@
     </div>
     <div class="beans__grid">
       <div class="bean-card">
-        <div class="bean-card__origin">Ethiopia · Yirgacheffe</div>
-        <h3>Morning Light</h3>
-        <p class="bean-card__notes">Blueberry · Jasmine · Lemon Zest</p>
-        <p class="bean-card__roast">Light Roast</p>
-        <a href="#" class="btn btn--primary btn--sm">$18 / 12oz</a>
-      </div>
-      <div class="bean-card bean-card--dark">
-        <div class="bean-card__origin">Colombia · Huila</div>
-        <h3>Dark Soil</h3>
-        <p class="bean-card__notes">Dark Chocolate · Walnut · Caramel</p>
-        <p class="bean-card__roast">Medium-Dark Roast</p>
-        <a href="#" class="btn btn--primary btn--sm">$18 / 12oz</a>
+        <div class="bean-card__img bean-card__img--1"></div>
+        <div class="bean-card__body">
+          <p class="bean-card__origin">Ethiopia · Yirgacheffe</p>
+          <h3>Morning Light</h3>
+          <p class="bean-card__notes">Blueberry · Jasmine · Lemon Zest</p>
+          <div class="bean-card__footer">
+            <span class="bean-card__roast">Light Roast</span>
+            <a href="#" class="btn btn--primary btn--sm">$18 / 12oz</a>
+          </div>
+        </div>
       </div>
       <div class="bean-card">
-        <div class="bean-card__origin">Hawaii · Kona</div>
-        <h3>Island Roots</h3>
-        <p class="bean-card__notes">Brown Sugar · Stone Fruit · Smooth Finish</p>
-        <p class="bean-card__roast">Medium Roast</p>
-        <a href="#" class="btn btn--primary btn--sm">$28 / 12oz</a>
+        <div class="bean-card__img bean-card__img--2"></div>
+        <div class="bean-card__body">
+          <p class="bean-card__origin">Colombia · Huila</p>
+          <h3>Dark Soil</h3>
+          <p class="bean-card__notes">Dark Chocolate · Walnut · Caramel</p>
+          <div class="bean-card__footer">
+            <span class="bean-card__roast">Medium-Dark Roast</span>
+            <a href="#" class="btn btn--primary btn--sm">$18 / 12oz</a>
+          </div>
+        </div>
+      </div>
+      <div class="bean-card">
+        <div class="bean-card__img bean-card__img--3"></div>
+        <div class="bean-card__body">
+          <p class="bean-card__origin">Hawaii · Kona</p>
+          <h3>Island Roots</h3>
+          <p class="bean-card__notes">Brown Sugar · Stone Fruit · Smooth Finish</p>
+          <div class="bean-card__footer">
+            <span class="bean-card__roast">Medium Roast</span>
+            <a href="#" class="btn btn--primary btn--sm">$28 / 12oz</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -195,25 +218,41 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <svg class="footer__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 88" fill="none">
-      <path d="M40 4C42.2 4 44.2 5.1 45.3 7L76 68C77.1 70 77.1 72.4 76 74.4C74.9 76.4 72.8 77.6 70.7 77.6H9.3C7.2 77.6 5.1 76.4 4 74.4C2.9 72.4 2.9 70 4 68L34.7 7C35.8 5.1 37.8 4 40 4Z" stroke="currentColor" stroke-width="1.6"/>
-      <circle cx="40" cy="22" r="2.8" fill="currentColor"/>
-      <circle cx="33.5" cy="27.5" r="2.2" fill="currentColor"/>
-      <circle cx="46.5" cy="27.5" r="2.2" fill="currentColor"/>
-      <line x1="40" y1="31" x2="40" y2="68" stroke="currentColor" stroke-width="1.2"/>
-      <path d="M40 40 C31 35 22 40 19 48 C28 42 35 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-      <path d="M40 40 C49 35 58 40 61 48 C52 42 45 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-      <path d="M40 54 C27 47 16 54 14 64 C25 57 34 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-      <path d="M40 54 C53 47 64 54 66 64 C55 57 46 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-    </svg>
-    <div class="footer__logo">LOAM <span>ROASTRY</span></div>
-    <p class="footer__tagline">Roasted with intention since 2014</p>
-    <div class="footer__links">
-      <a href="#">Instagram</a>
-      <a href="#">TikTok</a>
-      <a href="#">Newsletter</a>
+    <div class="footer__top">
+      <div class="footer__brand">
+        <svg class="footer__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 88" fill="none">
+          <path d="M40 4C42.2 4 44.2 5.1 45.3 7L76 68C77.1 70 77.1 72.4 76 74.4C74.9 76.4 72.8 77.6 70.7 77.6H9.3C7.2 77.6 5.1 76.4 4 74.4C2.9 72.4 2.9 70 4 68L34.7 7C35.8 5.1 37.8 4 40 4Z" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="40" cy="22" r="2.8" fill="currentColor"/>
+          <circle cx="33.5" cy="27.5" r="2.2" fill="currentColor"/>
+          <circle cx="46.5" cy="27.5" r="2.2" fill="currentColor"/>
+          <line x1="40" y1="31" x2="40" y2="68" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M40 40 C31 35 22 40 19 48 C28 42 35 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M40 40 C49 35 58 40 61 48 C52 42 45 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M40 54 C27 47 16 54 14 64 C25 57 34 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M40 54 C53 47 64 54 66 64 C55 57 46 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <p class="footer__name">Loam <em>Roastry</em></p>
+        <p class="footer__tagline">Roasted with intention since 2014</p>
+      </div>
+      <div class="footer__nav">
+        <h5>Explore</h5>
+        <a href="#story">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#beans">Shop Beans</a>
+        <a href="#wholesale">Wholesale</a>
+        <a href="#visit">Visit</a>
+      </div>
+      <div class="footer__nav">
+        <h5>Connect</h5>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Newsletter</a>
+        <a href="#">hello@loamroastry.com</a>
+      </div>
     </div>
-    <p class="footer__copy">&copy; 2026 Loam Roastry. All rights reserved.</p>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Loam Roastry. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
