@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>North Shore Roasters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__logo">North Shore Roasters</div>
+    <ul class="nav__links">
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#beans">Beans</a></li>
+      <li><a href="#visit">Visit Us</a></li>
+    </ul>
+    <a href="#visit" class="btn btn--outline">Find Us</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Small-batch. Slow-roasted.</p>
+      <h1 class="hero__headline">Coffee Worth<br>Waking Up For</h1>
+      <p class="hero__sub">Sourced from single-origin farms, roasted every morning on the North Shore of Oahu.</p>
+      <div class="hero__cta">
+        <a href="#menu" class="btn btn--primary">Explore the Menu</a>
+        <a href="#beans" class="btn btn--ghost">Shop Our Beans</a>
+      </div>
+    </div>
+    <div class="hero__badge">Est. 2014</div>
+  </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <span>Single Origin</span>
+    <span class="divider">·</span>
+    <span>Direct Trade</span>
+    <span class="divider">·</span>
+    <span>Roasted Daily</span>
+    <span class="divider">·</span>
+    <span>North Shore, Oahu</span>
+  </div>
+
+  <!-- OUR STORY -->
+  <section class="story" id="story">
+    <div class="story__text">
+      <p class="section-label">Our Story</p>
+      <h2>Rooted in the Island, Raised on Good Coffee</h2>
+      <p>North Shore Roasters began as a single roaster in a garage, fueled by a deep love for the craft and the land. We partner directly with farms across Hawaii, Ethiopia, and Colombia — paying farmers fairly and bringing you coffee that tells a story in every cup.</p>
+      <p>Every batch is small. Every roast is intentional. No shortcuts.</p>
+    </div>
+    <div class="story__visual">
+      <div class="story__img-block">
+        <div class="story__img story__img--1"></div>
+        <div class="story__img story__img--2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="menu__header">
+      <p class="section-label">What We Brew</p>
+      <h2>The Menu</h2>
+    </div>
+    <div class="menu__grid">
+      <div class="menu-card">
+        <div class="menu-card__icon">☕</div>
+        <h3>Pour Over</h3>
+        <p>Hand-poured, single cup, total clarity. Our house Ethiopian Yirgacheffe, bright and floral.</p>
+        <span class="menu-card__price">$6</span>
+      </div>
+      <div class="menu-card menu-card--featured">
+        <div class="menu-card__badge">House Favorite</div>
+        <div class="menu-card__icon">🌊</div>
+        <h3>North Shore Cold Brew</h3>
+        <p>18-hour steep with our dark roast blend. Smooth, bold, no bitterness — served over island ice.</p>
+        <span class="menu-card__price">$7</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card__icon">🍵</div>
+        <h3>Cortado</h3>
+        <p>Equal parts espresso and steamed milk. Direct, no-nonsense, and perfectly balanced.</p>
+        <span class="menu-card__price">$5</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card__icon">🧋</div>
+        <h3>Coconut Latte</h3>
+        <p>Our signature drink. Local coconut milk, two shots of our Colombia Huila espresso, touch of vanilla.</p>
+        <span class="menu-card__price">$7</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card__icon">⚡</div>
+        <h3>Espresso</h3>
+        <p>Double shot, pulled tight. Our Colombia Huila single origin. Chocolate, caramel, clean finish.</p>
+        <span class="menu-card__price">$4</span>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card__icon">🌿</div>
+        <h3>Matcha Latte</h3>
+        <p>Ceremonial grade matcha, steamed oat milk, a pinch of sea salt. For the non-coffee crowd.</p>
+        <span class="menu-card__price">$6</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEANS -->
+  <section class="beans" id="beans">
+    <div class="beans__header">
+      <p class="section-label">Take Home the Roast</p>
+      <h2>Shop Our Beans</h2>
+      <p class="beans__sub">Every bag is roasted to order and shipped within 24 hours.</p>
+    </div>
+    <div class="beans__grid">
+      <div class="bean-card">
+        <div class="bean-card__origin">Ethiopia · Yirgacheffe</div>
+        <h3>Morning Light</h3>
+        <p class="bean-card__notes">Blueberry · Jasmine · Lemon Zest</p>
+        <p class="bean-card__roast">Light Roast</p>
+        <a href="#" class="btn btn--primary btn--sm">$18 / 12oz</a>
+      </div>
+      <div class="bean-card bean-card--dark">
+        <div class="bean-card__origin">Colombia · Huila</div>
+        <h3>Shore Break</h3>
+        <p class="bean-card__notes">Dark Chocolate · Caramel · Hazelnut</p>
+        <p class="bean-card__roast">Medium-Dark Roast</p>
+        <a href="#" class="btn btn--primary btn--sm">$18 / 12oz</a>
+      </div>
+      <div class="bean-card">
+        <div class="bean-card__origin">Hawaii · Kona</div>
+        <h3>Island Roots</h3>
+        <p class="bean-card__notes">Brown Sugar · Stone Fruit · Smooth Finish</p>
+        <p class="bean-card__roast">Medium Roast</p>
+        <a href="#" class="btn btn--primary btn--sm">$28 / 12oz</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="visit__content">
+      <p class="section-label">Come Say Aloha</p>
+      <h2>Visit Us</h2>
+      <div class="visit__details">
+        <div class="visit__block">
+          <h4>Location</h4>
+          <p>58-625 Kamehameha Hwy<br>Haleiwa, HI 96712</p>
+        </div>
+        <div class="visit__block">
+          <h4>Hours</h4>
+          <p>Mon – Fri: 6am – 4pm<br>Sat – Sun: 6am – 5pm</p>
+        </div>
+        <div class="visit__block">
+          <h4>Contact</h4>
+          <p>aloha@northshoreroasters.com<br>(808) 555-0194</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__logo">North Shore Roasters</div>
+    <p class="footer__tagline">Roasted with aloha since 2014</p>
+    <div class="footer__links">
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+      <a href="#">Newsletter</a>
+    </div>
+    <p class="footer__copy">&copy; 2026 North Shore Roasters. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
