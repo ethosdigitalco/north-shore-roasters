@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Loam Roastry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">
+      <svg class="nav__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 88" fill="none">
+        <path d="M40 4C42.2 4 44.2 5.1 45.3 7L76 68C77.1 70 77.1 72.4 76 74.4C74.9 76.4 72.8 77.6 70.7 77.6H9.3C7.2 77.6 5.1 76.4 4 74.4C2.9 72.4 2.9 70 4 68L34.7 7C35.8 5.1 37.8 4 40 4Z" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="40" cy="22" r="2.8" fill="currentColor"/>
+        <circle cx="33.5" cy="27.5" r="2.2" fill="currentColor"/>
+        <circle cx="46.5" cy="27.5" r="2.2" fill="currentColor"/>
+        <line x1="40" y1="31" x2="40" y2="68" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M40 40 C31 35 22 40 19 48 C28 42 35 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <path d="M40 40 C49 35 58 40 61 48 C52 42 45 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <path d="M40 54 C27 47 16 54 14 64 C25 57 34 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        <path d="M40 54 C53 47 64 54 66 64 C55 57 46 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span class="nav__wordmark">Loam <em>Roastry</em></span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html" class="nav__active">Menu</a></li>
+      <li><a href="index.html#beans">Shop</a></li>
+      <li><a href="index.html#wholesale">Wholesale</a></li>
+      <li><a href="index.html#visit">Visit</a></li>
+    </ul>
+    <a href="index.html#visit" class="btn btn--outline">Find Us</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="menu-hero">
+    <div class="menu-hero__img"></div>
+    <div class="menu-hero__content">
+      <p class="menu-hero__eyebrow reveal">North Shore, Oahu</p>
+      <h1 class="menu-hero__headline reveal">Everything<br>we <em>make.</em></h1>
+      <p class="menu-hero__sub reveal">All drinks made to order. Milk alternatives available for any espresso drink.</p>
+    </div>
+    <div class="menu-hero__scroll reveal">
+      <span>Scroll to explore</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none"><rect x="6.5" y="0.5" width="3" height="6" rx="1.5" fill="currentColor" opacity="0.5"/><line x1="8" y1="10" x2="8" y2="22" stroke="currentColor" stroke-width="1.5"/><path d="M4 18 L8 22 L12 18" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  </section>
+
+  <!-- STICKY CATEGORY NAV -->
+  <div class="menu-nav" id="menu-nav">
+    <div class="menu-nav__inner">
+      <a href="#espresso" class="menu-nav__link active" data-section="espresso">Espresso</a>
+      <a href="#filter" class="menu-nav__link" data-section="filter">Filter</a>
+      <a href="#cold" class="menu-nav__link" data-section="cold">Cold</a>
+      <a href="#seasonal" class="menu-nav__link" data-section="seasonal">Seasonal</a>
+      <a href="#food" class="menu-nav__link" data-section="food">Food</a>
+    </div>
+    <p class="menu-nav__note">All prices in USD · Ask about milk alternatives</p>
+  </div>
+
+  <!-- ESPRESSO -->
+  <section class="menu-section" id="espresso">
+    <div class="menu-section__header reveal">
+      <p class="section-label">Espresso Bar</p>
+      <h2>The foundation<br>of <em>everything.</em></h2>
+      <p class="menu-section__desc">All espresso drinks are made with our Colombia Huila single origin unless noted.</p>
+    </div>
+
+    <div class="menu-featured reveal">
+      <div class="menu-featured__img menu-featured__img--coconut"></div>
+      <div class="menu-featured__text">
+        <span class="menu-featured__badge">House Signature</span>
+        <h3>Coconut Latte</h3>
+        <p>Our most-loved drink. Local coconut milk, two pulls of Colombia Huila espresso, a touch of raw cane sugar. Ordered hot or iced.</p>
+        <div class="menu-featured__footer">
+          <div class="menu-featured__tags">
+            <span class="tag tag--v">V</span>
+            <span class="tag tag--df">DF</span>
+          </div>
+          <span class="menu-featured__price">$7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-items">
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Espresso</h4>
+          </div>
+          <p>Double shot. Colombia Huila. Dark chocolate, caramel, clean finish.</p>
+        </div>
+        <span class="menu-item__price">$4</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Americano</h4>
+          </div>
+          <p>Espresso and hot water. Adjust the ratio to taste — just ask.</p>
+        </div>
+        <span class="menu-item__price">$5</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Cortado</h4>
+          </div>
+          <p>Equal parts espresso and steamed milk. Direct and perfectly balanced.</p>
+        </div>
+        <span class="menu-item__price">$5</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Flat White</h4>
+          </div>
+          <p>Ristretto pulls, velvety microfoam, served in a smaller cup.</p>
+        </div>
+        <span class="menu-item__price">$6</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Latte</h4>
+          </div>
+          <p>Two shots, steamed milk, light foam. Simple and good.</p>
+        </div>
+        <span class="menu-item__price">$6</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Cappuccino</h4>
+          </div>
+          <p>Equal thirds: espresso, steamed milk, and foam. Classic.</p>
+        </div>
+        <span class="menu-item__price">$6</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Oat Mocha</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+            </div>
+          </div>
+          <p>Espresso, house dark cacao syrup, steamed oat milk.</p>
+        </div>
+        <span class="menu-item__price">$7</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTER -->
+  <section class="menu-section menu-section--alt" id="filter">
+    <div class="menu-section__header reveal">
+      <p class="section-label">Filter Coffee</p>
+      <h2>Slow-brewed,<br><em>intentional.</em></h2>
+      <p class="menu-section__desc">Our filter offerings change with the season and what's coming off the roaster.</p>
+    </div>
+
+    <div class="menu-items">
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Batch Brew</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+              <span class="tag tag--df">DF</span>
+            </div>
+          </div>
+          <p>Rotating single origin, brewed fresh every hour. Ask what's on today.</p>
+        </div>
+        <span class="menu-item__price">$4</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Pour Over</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+              <span class="tag tag--df">DF</span>
+            </div>
+          </div>
+          <p>Hand-poured to order. Ethiopia Yirgacheffe — blueberry, jasmine, lemon.</p>
+        </div>
+        <span class="menu-item__price">$6</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>AeroPress</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+              <span class="tag tag--df">DF</span>
+            </div>
+          </div>
+          <p>Concentrated, smooth, full-bodied. A different way to experience the bean.</p>
+        </div>
+        <span class="menu-item__price">$6</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Chemex</h4>
+            <span class="menu-item__note">Serves 2</span>
+          </div>
+          <p>Clean and balanced. Best shared. Reserve at the counter — takes about 6 minutes.</p>
+        </div>
+        <span class="menu-item__price">$10</span>
+      </div>
+    </div>
+
+    <div class="menu-callout reveal">
+      <p>"Our pour over recipe changes weekly. We keep a tasting card at the counter so you know exactly what you're drinking."</p>
+    </div>
+  </section>
+
+  <!-- COLD -->
+  <section class="menu-section" id="cold">
+    <div class="menu-section__header reveal">
+      <p class="section-label">Cold Drinks</p>
+      <h2>Built for the<br><em>island heat.</em></h2>
+      <p class="menu-section__desc">Made with our 18-hour cold brew and served over hand-chipped ice.</p>
+    </div>
+
+    <div class="menu-featured reveal">
+      <div class="menu-featured__img menu-featured__img--coldbrew"></div>
+      <div class="menu-featured__text">
+        <span class="menu-featured__badge">Best Seller</span>
+        <h3>Loam Cold Brew</h3>
+        <p>Steeped for 18 hours using our dark roast blend. Earthy, smooth, and bold without any bitterness. Served over island ice — no milk needed.</p>
+        <div class="menu-featured__footer">
+          <div class="menu-featured__tags">
+            <span class="tag tag--v">V</span>
+            <span class="tag tag--df">DF</span>
+            <span class="tag tag--gf">GF</span>
+          </div>
+          <span class="menu-featured__price">$7</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-items">
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Cold Brew Tonic</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+              <span class="tag tag--df">DF</span>
+            </div>
+          </div>
+          <p>Cold brew floated over tonic water with a fresh orange peel. Bright and effervescent.</p>
+        </div>
+        <span class="menu-item__price">$8</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Iced Latte</h4>
+          </div>
+          <p>Two shots over ice with your choice of milk. Simple, reliable, good.</p>
+        </div>
+        <span class="menu-item__price">$6</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Iced Coconut Latte</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+              <span class="tag tag--df">DF</span>
+            </div>
+          </div>
+          <p>Coconut milk, espresso, raw cane syrup, served cold. Our signature, iced.</p>
+        </div>
+        <span class="menu-item__price">$7</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Flash-Chilled Pour Over</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+              <span class="tag tag--df">DF</span>
+            </div>
+          </div>
+          <p>Pour over brewed directly over ice. Bright, clear, delicate. Worth the wait.</p>
+        </div>
+        <span class="menu-item__price">$7</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASONAL -->
+  <section class="menu-section menu-section--dark" id="seasonal">
+    <div class="menu-section__header reveal">
+      <p class="section-label">Seasonal</p>
+      <h2>Rotating with the<br><em>season.</em></h2>
+      <p class="menu-section__desc">These drinks change. When they're gone, they're gone. Ask what's current.</p>
+    </div>
+
+    <div class="menu-items menu-items--seasonal">
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Hibiscus Fizz Latte</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+            </div>
+          </div>
+          <p>Espresso, house hibiscus syrup, oat milk foam. Floral, tart, a little wild.</p>
+        </div>
+        <span class="menu-item__price">$8</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Brown Butter Latte</h4>
+          </div>
+          <p>Espresso, house brown butter syrup, steamed whole milk. Rich and nutty.</p>
+        </div>
+        <span class="menu-item__price">$8</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Kona Honey Cappuccino</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--gf">GF</span>
+            </div>
+          </div>
+          <p>Local Kona honey, double shot, cinnamon foam. An island classic, made ours.</p>
+        </div>
+        <span class="menu-item__price">$9</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD -->
+  <section class="menu-section menu-section--alt" id="food">
+    <div class="menu-section__header reveal">
+      <p class="section-label">All-Day Food</p>
+      <h2>Simple food,<br><em>done well.</em></h2>
+      <p class="menu-section__desc">Everything is made fresh in-house each morning. We run out, so come early.</p>
+    </div>
+
+    <div class="menu-items">
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Avocado Toast</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+            </div>
+          </div>
+          <p>Sourdough, smashed avocado, pickled red onion, chili flakes, flaky salt.</p>
+        </div>
+        <span class="menu-item__price">$12</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Granola Bowl</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+              <span class="tag tag--gf">GF</span>
+            </div>
+          </div>
+          <p>House granola, coconut yogurt, seasonal fruit, local honey. Our most-ordered food item.</p>
+        </div>
+        <span class="menu-item__price">$9</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Banana Bread</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+            </div>
+          </div>
+          <p>House-baked, served warm with coconut butter. Pairs perfectly with a pour over.</p>
+        </div>
+        <span class="menu-item__price">$5</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Almond Croissant</h4>
+          </div>
+          <p>Twice-baked with house almond cream. Flaky, rich, and gone by noon most days.</p>
+        </div>
+        <span class="menu-item__price">$4.50</span>
+      </div>
+      <div class="menu-item reveal">
+        <div class="menu-item__info">
+          <div class="menu-item__header">
+            <h4>Chia Pudding</h4>
+            <div class="menu-item__tags">
+              <span class="tag tag--v">V</span>
+              <span class="tag tag--gf">GF</span>
+              <span class="tag tag--df">DF</span>
+            </div>
+          </div>
+          <p>Coconut milk chia, fresh mango, toasted coconut. Light, tropical, satisfying.</p>
+        </div>
+        <span class="menu-item__price">$8</span>
+      </div>
+    </div>
+
+    <!-- DIETARY LEGEND -->
+    <div class="menu-legend reveal">
+      <p class="menu-legend__title">Dietary Guide</p>
+      <div class="menu-legend__items">
+        <span><span class="tag tag--v">V</span> Vegan</span>
+        <span><span class="tag tag--df">DF</span> Dairy-Free</span>
+        <span><span class="tag tag--gf">GF</span> Gluten-Free</span>
+      </div>
+      <p class="menu-legend__note">All espresso drinks can be made dairy-free. Ask us about allergens.</p>
+    </div>
+  </section>
+
+  <!-- STICKY ORDER BAR -->
+  <div class="order-bar">
+    <div class="order-bar__left">
+      <span class="order-bar__status">
+        <span class="order-bar__dot"></span>
+        Open today · 6am – 4pm
+      </span>
+      <span class="order-bar__divider">·</span>
+      <span class="order-bar__roast">Today's roast: <em>Morning Light, Ethiopia</em></span>
+    </div>
+    <div class="order-bar__right">
+      <a href="index.html#beans" class="btn btn--primary btn--sm">Shop Beans Online</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <svg class="footer__mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 88" fill="none">
+          <path d="M40 4C42.2 4 44.2 5.1 45.3 7L76 68C77.1 70 77.1 72.4 76 74.4C74.9 76.4 72.8 77.6 70.7 77.6H9.3C7.2 77.6 5.1 76.4 4 74.4C2.9 72.4 2.9 70 4 68L34.7 7C35.8 5.1 37.8 4 40 4Z" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="40" cy="22" r="2.8" fill="currentColor"/>
+          <circle cx="33.5" cy="27.5" r="2.2" fill="currentColor"/>
+          <circle cx="46.5" cy="27.5" r="2.2" fill="currentColor"/>
+          <line x1="40" y1="31" x2="40" y2="68" stroke="currentColor" stroke-width="1.2"/>
+          <path d="M40 40 C31 35 22 40 19 48 C28 42 35 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M40 40 C49 35 58 40 61 48 C52 42 45 44 40 47" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M40 54 C27 47 16 54 14 64 C25 57 34 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M40 54 C53 47 64 54 66 64 C55 57 46 59 40 62" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+        </svg>
+        <p class="footer__name">Loam <em>Roastry</em></p>
+        <p class="footer__tagline">Roasted with intention since 2014</p>
+      </div>
+      <div class="footer__nav">
+        <h5>Explore</h5>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#beans">Shop Beans</a>
+        <a href="index.html#wholesale">Wholesale</a>
+        <a href="index.html#visit">Visit</a>
+      </div>
+      <div class="footer__nav">
+        <h5>Connect</h5>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Newsletter</a>
+        <a href="#">hello@loamroastry.com</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 Loam Roastry. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="cursor.js"></script>
+  <script src="menu.js"></script>
+</body>
+</html>
